@@ -61,7 +61,8 @@ def setup_crew():
         cache=True,
         max_rpm=100,
         language='pt-br',
-        output_log_file='sinais.log'
+        output_log_file='sinais.log',
+        share_crew=False
         )
 
     research_crew.kickoff()
