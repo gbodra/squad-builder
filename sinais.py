@@ -108,4 +108,4 @@ if __name__ in {"__main__", "__mp_main__"}:
 
         threading.Thread(target=update_log, daemon=True).start()
 
-    ui.run(port=os.getenv('PORT'), storage_secret='private key to secure the browser session cookie')
+    ui.run(port=int(os.getenv('PORT')), storage_secret='private key to secure the browser session cookie')
